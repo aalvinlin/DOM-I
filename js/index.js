@@ -131,3 +131,25 @@ copyright.textContent = siteContent.footer.copyright;
 
 // ============ Task 3 ============ 
 
+// prepend and append new nav links
+let homeLink = document.createElement("a");
+homeLink.href = "#";
+homeLink.textContent = "Home";
+document.querySelector("nav").prepend(homeLink);
+
+let pricingLink = document.createElement("a");
+pricingLink.href = "#";
+pricingLink.textContent = "Pricing";
+document.querySelector("nav").appendChild(pricingLink);
+
+// change nav link text to green
+let links = document.querySelectorAll("a");
+links.forEach(link => link.style.color = "green")
+
+// ============ Stretch Goals ============ 
+
+ctaButton.style.color = "white";
+ctaButton.style.backgroundColor = "black";
+
+let test = document.querySelector("section.contact > p:nth-child(3)")
+console.log(test);
