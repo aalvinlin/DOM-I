@@ -1,14 +1,37 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  font-size: 62.5%;
 }
 
 .digit {
   display: inline-block;
-  font-size: 80px;
+  font-size: 20rem;
+  line-height: 40rem;
+
+  font-family: 'Lucida Console', 'Courier New', monospace;
 }
 
 .redDigit {
   color: red;
+}
+
+.digits, .controls {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+
+.digits {
+  height: 40rem;
+}
+
+button {
+  font-size: 3rem;
+  line-height: 6rem;
+  padding: 0% 5%;
+  border-radius: 5px;
+  margin: 10%;
 }
